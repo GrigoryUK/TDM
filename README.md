@@ -1,4 +1,4 @@
-# Gulp - сборка MaxGraph
+# Gulp - сборка UGK
 
 > Используется Gulp 4
 
