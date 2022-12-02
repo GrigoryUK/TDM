@@ -5,11 +5,12 @@
 @import "settings";
 
 // подключения компонентов страницы
-@import "./components/base/fonts";
-@import "./components/base/btn";
+@import "./components/global/fonts";
+@import "./components/button/btn";
 @import "./components/index";
-@import "./components/base/header";
-@import "./components/base/footer";
+@import "./components/global/header";
+@import "./components/global/footer";
+@import "./components/form/form";
 
 
 

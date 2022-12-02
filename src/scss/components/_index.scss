@@ -16,8 +16,9 @@
 
 .index__cont {
   display: flex;
+  flex-direction: column;
   @include mobile {
-    flex-direction: column;
+
   }
 }
 
@@ -32,14 +33,14 @@
 
 
 .btn__index {
-  width: 180px;
+  width: 240px;
   height: 45px;
   font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
   font-weight: 500;
-  color: var(--white);
+  color: white;
   background: black;
   border-radius: 4px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);

@@ -1,0 +1,37 @@
+.btn {
+
+  &__default {
+    font-family: "Tahoma";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1em;
+    text-align: center;
+    letter-spacing: 0.012em;
+    color: var(--primary3);
+    background: var(--liner1);
+    width: 100%;
+    max-width: 373px;
+    border-radius:4px;
+    background-size: 110% 100%;
+    transition: all .4s ease-in-out;
+
+    &.narrow {
+      padding: 12px 0;
+
+      @include hover {
+        // box-shadow: 1px -3px 6px;
+      }
+    }
+
+    &.wide {
+      padding: 24px 0;
+      border-radius: 8px;
+    }
+
+    @include hover {
+      background-position-x: 1080%;
+      opacity: 0.9;
+    }
+  }
+}
