@@ -121,7 +121,7 @@
     "prefix": "g-picture",
     "body": [
       "<picture>",
-      "  <img src=\".$1\" class=\"image\" alt=\"$3\">",
+      "  <img src=\".$1\" class=\"image liner\" alt=\"$3\">",
       "</picture>"
     ],
     "description": "Snippet for basic logo structure"
