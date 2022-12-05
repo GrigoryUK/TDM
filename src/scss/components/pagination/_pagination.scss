@@ -1,0 +1,86 @@
+.paginationDef {
+  &__container {
+    background: var(--bg-block);
+    border-radius: 16px;
+    padding: 32px 0 64px 32px;
+    width: 100%;
+
+    @include tablet {
+      padding: 24px 16px 44px 24px;
+    }
+    .subtitle {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__content {
+
+    > ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    ul > li > a {
+      margin: 0;
+      color: var(--primary1);
+      transition: all 0.4s ease;
+      position: relative;
+
+      @include hover {
+        color: var(--primary2);
+      }
+
+
+    }
+
+    ul > li {
+      position: relative;
+
+      &.active {
+
+        > a {
+          color: var(--primary2);
+        }
+        &::before {
+          border-right: 1px solid var(--primary2);
+          content: '';
+          display: block;
+          height: 8px;
+          margin-top: -8px;
+          position: absolute;
+          transform: rotate(135deg);
+          left: -12px;
+          top: 12px;
+          width: 0;
+        }
+
+        &::after {
+          border-right: 1px solid var(--primary2);
+          content: '';
+          display: block;
+          height: 8px;
+          margin-top: -8px;
+          position: absolute;
+          left: -12px;
+          top: 12px;
+          width: 0;
+          margin-top: -2px;
+          transform: rotate(45deg);
+        }
+      }
+    }
+
+    > ul > li > ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      padding-left: 16px;
+      padding-top: 6px;
+    }
+
+    ul li {
+      margin-bottom: 6px;
+    }
+  }
+}

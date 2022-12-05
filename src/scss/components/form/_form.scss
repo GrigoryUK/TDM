@@ -35,30 +35,30 @@
         @include mb(0.5em);
         padding-left: 30px;
 
-        &::before, ::after {
-          border-right: 2px solid var(--primary2);
+        &::before {
+          border-right: 1.5px solid var(--primary2);
           content: '';
           display: block;
-          height: 16px;
+          height: 10px;
           margin-top: -8px;
           position: absolute;
           transform: rotate(135deg);
           left: 8px;
-          top: 10px;
+          top: 12px;
           width: 0;
         }
 
         &::after {
-          border-right: 2px solid var(--primary2);
+          border-right: 1.2px solid var(--primary2);
           content: '';
           display: block;
-          height: 16px;
+          height: 10px;
           margin-top: -8px;
           position: absolute;
           left: 8px;
-          top: 10px;
+          top: 12px;
           width: 0;
-          margin-top: 2px;
+          margin-top: 0px;
           transform: rotate(45deg);
         }
       }

@@ -1,0 +1,63 @@
+.quote {
+  &__container {
+    background: var(--bg-block);
+    padding: 64px 0;
+    margin-bottom: 104px;
+
+    @include tablet {
+      padding: 64px 30px;
+    }
+  }
+
+  &__content {
+    max-width: 984px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 28px;
+
+    &::before {
+      content: "";
+      height: 100%;
+      width: 4px;
+      background: var(--primary2);
+      position: absolute;
+      left: 0;
+    }
+
+    p {
+      margin: 0;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: var(--font-line-l);
+      @include mb(1em);
+    }
+
+    b {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: var(--font-line-l);
+    }
+
+    strong {
+      font-size: 24px;
+      line-height: var(--font-line-l);
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+
+    }
+
+    ul > li {
+      font-size: 24px;
+      line-height: var(--font-line-l);
+
+
+    }
+  }
+}

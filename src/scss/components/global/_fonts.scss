@@ -2,6 +2,7 @@
   margin: 0;
 
   h1 {
+    margin: 0;
     font-family: "Tahoma";
     font-style: normal;
     font-weight: 700;
@@ -89,7 +90,7 @@
     text-underline-offset: 4px;
     text-decoration-thickness: 0.05em;
     color: var(--primary2);
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 
     @include hover {
       opacity: 0.8;
@@ -99,4 +100,41 @@
 
 .quote {
   margin: 0;
+}
+
+.line-span {
+  margin: 0;
+  position: absolute;
+  max-width: 227px;
+  color: var(--primary3);
+  z-index: 2;
+  left: 24px;
+  bottom: 32px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    height: 2px;
+    width: 64px;
+    background: var(--primary2);
+    transition: all 0.4s ease-in-out;
+  }
+
+  &.welcome {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: var(--font-size-l);
+    line-height: var(--font-line-l);
+    max-width: 482px;
+    text-transform: uppercase;
+    left: 44px;
+
+    &::before {
+      bottom: -8px;
+      height: 4px;
+      width: 60px;
+    }
+  }
 }

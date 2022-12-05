@@ -1,0 +1,41 @@
+.welcome {
+
+  &__container {
+    margin-bottom: 40px;
+  }
+
+
+  .subtitle {
+    margin-bottom: 36px;
+  }
+
+  .text {
+    margin-bottom: 40px;
+  }
+
+  &__blocks {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+
+    @include hover {
+      .line-span {
+
+
+        &::before {
+          width: 0%;
+        }
+      }
+
+      .liner {
+        opacity: 0.5;
+      }
+    }
+
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+}
