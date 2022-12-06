@@ -14,18 +14,14 @@ function sliderHorizontal() {
     },
   });
 
+
+}
+
+function sliderVertical() {
   const swiperV = new Swiper(".slider--vertical", {
     slidesPerView: "auto",
     spaceBetween: 30,
-   
     loop: true,
-
-    // effect: "flip",
-    // flipEffect: {
-    //   slideShadows: false,
-    //   limitRotation: false,
-    // },
-
     navigation: {
       nextEl: ".sliderV__next",
       prevEl: ".sliderV__prev",
@@ -33,4 +29,4 @@ function sliderHorizontal() {
   });
 }
 
-export { sliderHorizontal };
+export { sliderHorizontal, sliderVertical };

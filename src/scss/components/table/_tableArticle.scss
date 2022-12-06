@@ -1,12 +1,13 @@
 .tableArticle {
+  margin-left: -11px;
 
-  
   &__container {
     max-width: 549px;
     margin: 0 auto;
     width: 100%;
     margin-top: 16px;
     margin-bottom: 32px;
+
 
     table {
       width: 100%;
