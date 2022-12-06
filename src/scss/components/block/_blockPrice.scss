@@ -1,0 +1,18 @@
+.blockPrice {
+  background: var(--bg-block);
+  border-radius: 16px;
+  padding: 24px 24px 40px 24px;
+  margin-bottom: 80px;
+
+  &__price {
+    color: var(--placeholder);
+    margin-bottom: 8px;
+  }
+
+  &__number {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin-bottom: 30px;
+  }
+}

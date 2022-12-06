@@ -1,6 +1,38 @@
-.breadcrumb-item+.breadcrumb-item::before {
+.breadcrumb-item + .breadcrumb-item::before {
   float: left;
-  padding-right: 0.5rem;
-  color: #6c757d;
-  content: var(--bs-breadcrumb-divider, "/");
+  padding-right: 0.3rem;
+  color: var(--placeholder);
+  content: "/";
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 0.3rem;
+}
+
+.breadcrumb-item.active {
+  color: var(--primary2);
+  opacity: 0.6;
+}
+
+.breadcrumb {
+  padding-top: 46px;
+  margin-bottom: 32px;
+  ol {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0;
+    list-style: none;
+  }
+
+  ol > li > a {
+    color: var(--placeholder);
+    opacity: 0.6;
+    transition: all 0.4s;
+
+    @include hover {
+      color: var(--primary1);
+      opacity: 1;
+    }
+  }
 }

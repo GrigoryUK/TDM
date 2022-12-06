@@ -1,0 +1,47 @@
+.blockContact {
+
+  .text {
+    margin-bottom: 32px;
+  }
+
+  .imagefloat.float-right {
+    margin-left: 20px;
+    .image {
+      max-width: 353px;
+
+    }
+  }
+
+  &__descr {
+    .subtitle {
+      margin-bottom: 24px;
+    }
+    .contact__info--row {
+
+      a {
+        color: var(--primary1);
+
+        @include hover {
+          color: var(--primary2);
+        }
+
+        &::after {
+          background-color: var(--primary2);
+        }
+      }
+    }
+    .contact__info {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__map {
+
+    iframe {
+      width: 100%;
+      height: 446px;
+    }
+  }
+
+
+}

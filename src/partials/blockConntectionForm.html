@@ -1,0 +1,68 @@
+<div class="connectionForm">
+  <div class="container">
+    <div class="container__main">
+      <div class="container__right">
+        <!-- content-right 66% -->
+        <div class="connectionForm__content">
+          <div class="form__content--right">
+            <ul>
+              <li>
+                Если у Вас возникли вопросы по тем или иным позициям в нашем
+                каталоге продукции — сообщите нам! Наш ответ не заставит Вас
+                ждать!
+              </li>
+              <li>
+                Вас интересует наличие материала на складе или сроки поставки —
+                сообщите нам! Будьте уверены, наши специалисты ответят на все Ваши
+                вопросы!
+              </li>
+              <li>
+                Если в каталоге нашей продукции Вы не смогли найти то, что Вам
+                необходимо, то просто сообщите нам! Мы обязательно постараемся
+                найти для Вас именно то, что Вы ищите!
+              </li>
+              <li>
+                Вы желаете начать с пробной партии или получить образцы продукции
+                — сообщите нам! Мы открыты для сотрудничества и обязательно пойдем
+                Вам навстречу!
+              </li>
+            </ul>
+          </div>
+          <form class="form__default" action="">
+            <div class="form__inputs">
+              <div class="form__input">
+                <input type="text" name="name" placeholder="Имя" />
+              </div>
+              <div class="form__input">
+                <input type="email" name="email" placeholder="email@email.ru" />
+              </div>
+              <div class="form__input">
+                <input type="tel" name="phone" placeholder="+7 999 999 99 99" />
+              </div>
+              <div class="form__input">
+                <textarea
+                  name="other"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Сообщение"
+                ></textarea>
+              </div>
+            </div>
+            <div class="form__button">
+              <button type="submit" class="btn-reset btn__default narrow">
+                Оставить заявку
+              </button>
+            </div>
+            <div class="form__success">Спасибо</div>
+          </form>
+        </div>
+
+      </div>
+      <div class="container__left">
+        <!-- content-left 32% -->
+        @include('pagination.html')
+      </div>
+    </div>
+  </div>
+</div>

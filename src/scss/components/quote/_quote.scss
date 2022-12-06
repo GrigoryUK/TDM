@@ -32,17 +32,20 @@
       font-size: 24px;
       line-height: var(--font-line-l);
       @include mb(1em);
+      max-width: 962px;
     }
 
     b {
       font-weight: 700;
       font-size: 24px;
       line-height: var(--font-line-l);
+      max-width: 962px;
     }
 
     strong {
       font-size: 24px;
       line-height: var(--font-line-l);
+      max-width: 962px;
     }
 
     ul {
@@ -56,6 +59,8 @@
     ul > li {
       font-size: 24px;
       line-height: var(--font-line-l);
+      max-width: 962px;
+      @include mb(.5em);
 
 
     }

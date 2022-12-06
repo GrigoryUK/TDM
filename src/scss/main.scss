@@ -6,6 +6,7 @@
 
 // подключения компонентов страницы
 @import "./components/global/fonts";
+@import "./components/global/imagefloat";
 @import "./components/button/btn";
 @import "./components/index";
 @import "./components/global/header";
@@ -13,11 +14,21 @@
 @import "./components/form/form";
 @import "./components/contact/contact";
 @import "./components/slider/sliderH";
+@import "./components/slider/sliderV";
 @import "./components/quote/quote";
 @import "./components/welcome/welcome";
 @import "./components/fullPicture/fullPicture";
 @import "./components/pagination/pagination";
 @import "./components/blockText/blockText";
-
+@import "./components/breadcrumb/breadcrumb";
+@import "./components/start/start";
+@import "./components/connectionForm/connectionForm";
+@import "./components/block/blockProduct";
+@import "./components/block/blockContact";
+@import "./components/block/blockAbout";
+@import "./components/block/blockArticle";
+@import "./components/block/blockPrice";
+@import "./components/table/tableArticle";
+@import "./components/footnote/footnote";
 
 

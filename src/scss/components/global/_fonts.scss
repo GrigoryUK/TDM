@@ -98,6 +98,20 @@
   }
 }
 
+.signature {
+
+  display: flex;
+  justify-content: flex-end;
+
+
+  p {
+    margin: 0;
+    text-align: right;
+    font-style: italic;
+    max-width: 300px;
+  }
+}
+
 .quote {
   margin: 0;
 }
@@ -136,5 +150,23 @@
       height: 4px;
       width: 60px;
     }
+  }
+
+  &.blockProduct {
+    max-width: 334px;
+    font-size: var(--font-size-l);
+    line-height: 28px;
+    text-transform: uppercase;
+    left: 16px;
+
+    &::before {
+      bottom: -8px;
+      height: 4px;
+      width: 40px;
+    }
+  }
+
+  &.sliderVslider {
+    max-width: 312px;
   }
 }

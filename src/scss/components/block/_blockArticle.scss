@@ -1,0 +1,26 @@
+.blockArticle {
+
+  // .text {
+
+  // }
+
+  &__content {
+    margin-bottom: 126px;
+
+    .imagefloat.float-left {
+      max-width: 373px;
+      margin-top: 16px;
+      margin-right: 20px;
+    }
+
+    .imagefloat.float-right {
+      max-width: 274px;
+      margin-left: 20px;
+      // margin-top: 16px;
+      // margin-right: 20px;
+    }
+  }
+
+
+
+}

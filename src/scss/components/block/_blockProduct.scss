@@ -1,0 +1,32 @@
+.blockProduct {
+
+
+  &__row {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    max-height: 373px;
+    overflow: hidden;
+    &:first-child {
+      margin-right: 20px;
+    }
+
+    @include hover {
+
+      .liner {
+        opacity: 0.5;
+      }
+
+      .line-span {
+
+        &::before {
+          width: 0;
+        }
+      }
+    }
+  }
+}

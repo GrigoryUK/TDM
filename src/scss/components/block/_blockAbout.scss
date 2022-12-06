@@ -1,0 +1,17 @@
+.blockAbout {
+
+  &__content {
+
+    .text {
+      margin-bottom: 24px;
+    }
+
+    .imagefloat.float-left {
+
+      .image {
+        max-width: 373px;
+        margin-right: 20px;
+      }
+    }
+  }
+}
