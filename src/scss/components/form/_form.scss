@@ -82,6 +82,8 @@
   &__input {
     @include mb(20px);
 
+
+
     input {
       width: 100%;
       border-radius: 4px;
@@ -89,6 +91,13 @@
       border: 1px solid var(--primary5);
       padding: 12px;
       outline: none;
+
+      &:focus {
+
+        &::placeholder {
+          color: transparent;
+        }
+      }
     }
 
     textarea {
@@ -96,11 +105,21 @@
       resize: none;
       background: var(--bg-block);
       border: 1px solid var(--primary5);
-      height: 108px;
+      min-height: 108px;
       border-radius: 4px;
       outline: none;
       padding: 12px;
+      overflow-y: hidden;
+
+      &:focus {
+
+        &::placeholder {
+          color: transparent;
+        }
+      }
     }
+
+
   }
 
   &__button {

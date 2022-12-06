@@ -20,6 +20,14 @@
 
   &__item {
 
+    .image {
+      max-width: 569px;
+      min-width: 569px;
+      max-height: 300px;
+      min-height: 300px;
+      border-radius: 16px;
+    }
+
     @include hover {
       .line-span {
 

@@ -11,6 +11,14 @@
   &__item {
     max-height: 373px;
     overflow: hidden;
+
+    .image {
+      max-width: 372px;
+      min-width: 372px;
+      min-height: 200px;
+      max-height: 200px;
+      border-radius: 16px; 
+    }
     &:first-child {
       margin-right: 20px;
     }

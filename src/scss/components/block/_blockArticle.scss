@@ -8,14 +8,30 @@
     margin-bottom: 126px;
 
     .imagefloat.float-left {
-      max-width: 373px;
+
+      .image {
+        max-width: 373px;
+        min-width: 373px;
+        max-height: 200px;
+        min-height: 200px;
+        border-radius: 16px;
+      }
       margin-top: 16px;
+      margin-bottom: 16px;
       margin-right: 20px;
     }
 
     .imagefloat.float-right {
-      max-width: 274px;
+
       margin-left: 20px;
+
+      .image {
+        max-width: 274px;
+        min-width: 274px;
+        max-height: 206px;
+        min-height: 206px;
+        border-radius: 16px;
+      }
       // margin-top: 16px;
       // margin-right: 20px;
     }

@@ -8,7 +8,10 @@
     margin-left: 20px;
     .image {
       max-width: 353px;
-
+      min-width: 353px;
+      max-height: 240px;
+      min-height: 240px;
+      border-radius: 16px;
     }
   }
 
