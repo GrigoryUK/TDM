@@ -7,6 +7,10 @@
     .subtitle {
       color: var(--primary3);
       margin-bottom: 32px;
+
+      h2 {
+        color: var(--primary3);
+      }
     }
   }
 
@@ -116,6 +120,7 @@
       width: 1360px;
       height: 30em;
       margin-bottom: -.5em;
+      border: none;
     }
   }
 }

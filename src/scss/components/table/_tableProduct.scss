@@ -30,6 +30,16 @@
       }
     }
   }
+
+  &__caption {
+    margin-top: 1px;
+    table > tbody > tr > td {
+
+      &:nth-child(1) {
+        width: 38.7%;
+      }
+    }
+  }
 }
 
 
