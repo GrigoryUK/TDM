@@ -4,9 +4,11 @@ import textareaHeight from "./utils/textarea";
 import {sliderHorizontal} from "./Slider/slider";
 
 
-window.onload = function () {
+
+
+window.addEventListener('DOMContentLoaded', (event) => {
   formView()
   sliderHorizontal()
   smoothScroll()
   textareaHeight()
-}
+});

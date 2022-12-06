@@ -150,9 +150,9 @@
     border-radius: 4px;
     color: var(--primary3);
     background: var(--liner1);
-
+    user-select: none;
     opacity: 0;
     visibility: hidden;
-    transition: .8s ease;
+    // transition: .8s ease;
   }
 }

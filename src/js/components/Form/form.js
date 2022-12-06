@@ -1,8 +1,9 @@
 import { validateForms } from "../../functions/validate-forms";
 import { isMobile, isTablet, isDesktop } from "../../functions/check-viewport";
 
-// import gsap from "gsap";
-// import { TimelineLite } from "gsap/gsap-core";
+import gsap from "gsap";
+import { TimelineLite } from "gsap/gsap-core";
+import { Linear } from "gsap";
 
 function formView() {
   let selector = document.querySelectorAll('input[type="tel"');
@@ -127,25 +128,16 @@ function formView() {
 
       if (final == true) {
         if (isDesktop()) {
-          // setTimeout ради примера
 
-          setTimeout(() => {
-            formBtn.setAttribute("disabled", "");
-            formBtn.style.background = "var(--placeholder)";
-            formBtn.innerHTML = "обрабатываем заявку...";
-          }, 1000);
+          gsap.registerPlugin(TimelineLite)
+          const tl = new TimelineLite();
 
-          setTimeout(() => {
-            formInputs.style.opacity = "0";
-            formInputs.style.visibility = "hidden";
-            formBtn.style.opacity = "0";
-            formBtn.style.visibility = "hidden";
-          }, 1500);
+          tl.to(formBtn, .5, {opacity: 0,  ease: Linear}, 0)
+          tl.to(formInputs, 1, {opacity: 0,  ease: Linear}, 0)
+          tl.to(formSuc, 1, {opacity: 1, visibility: 'visible', ease: Linear})
 
-          setTimeout(() => {
-            formSuc.style.opacity = "1";
-            formSuc.style.visibility = "visible";
-          }, 2000);
+
+         
         }
 
         if (isMobile() || isTablet()) {
