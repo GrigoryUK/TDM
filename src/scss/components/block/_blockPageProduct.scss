@@ -1,0 +1,32 @@
+.blockPageProduct {
+
+
+  &__Imgleft {
+    display: flex;
+    margin-bottom: 16px;
+    .image {
+      max-width: 373px;
+      min-width: 373px;
+      min-height: 328px;
+      max-height: 328px;
+      margin-right: 20px;
+      border-radius: 16px;
+
+    }
+
+    .text {
+      margin-top: 28px;
+
+
+
+    }
+  }
+
+  &__story {
+    margin-bottom: 40px;
+
+    .subtitle {
+      margin-bottom: 24px;
+    }
+  }
+}

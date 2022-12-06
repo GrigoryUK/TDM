@@ -12,6 +12,7 @@
 @import "./components/global/header";
 @import "./components/global/footer";
 @import "./components/form/form";
+@import "./components/form/connectionForm";
 @import "./components/contact/contact";
 @import "./components/slider/sliderH";
 @import "./components/slider/sliderV";
@@ -19,16 +20,17 @@
 @import "./components/welcome/welcome";
 @import "./components/fullPicture/fullPicture";
 @import "./components/pagination/pagination";
-@import "./components/blockText/blockText";
 @import "./components/breadcrumb/breadcrumb";
 @import "./components/start/start";
-@import "./components/connectionForm/connectionForm";
+@import "./components/block/blockText";
 @import "./components/block/blockProduct";
 @import "./components/block/blockContact";
 @import "./components/block/blockAbout";
 @import "./components/block/blockArticle";
 @import "./components/block/blockPrice";
+@import "./components/block/blockPageProduct";
 @import "./components/table/tableArticle";
+@import "./components/table/tableProduct";
 @import "./components/footnote/footnote";
 
 
