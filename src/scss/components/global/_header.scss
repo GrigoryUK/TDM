@@ -1,20 +1,40 @@
 .header {
+  background: var(--primary3);
   &__container {
     padding-top: 34px;
     padding-bottom: 34px;
     border-bottom: 1px solid var(--primary2);
+
+    @include min-desktop {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
   }
 
   &__logo {
     max-width: 176px;
     min-width: 176px;
+
+    @include min-desktop {
+      max-width: 150px;
+      min-width: 150px;
+    }
   }
 
   &__content {
     display: flex;
 
+    @include min-desktop {
+      flex-direction: column;
+    }
+
     &--logo {
       margin-right: 108px;
+
+      @include min-desktop {
+        margin-right: 0;
+        margin-bottom: 16px;
+      }
     }
 
     &--left {
@@ -26,6 +46,11 @@
     margin-top: 6px;
     width: 100%;
     margin-bottom: 30px;
+
+    @include min-desktop {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
     ul {
       margin: 0;
       padding: 0;
@@ -33,6 +58,10 @@
       display: flex;
       align-items: center;
       width: 100%;
+
+      @include min-desktop {
+        justify-content: flex-start;
+      }
     }
 
     ul > li {
@@ -44,6 +73,12 @@
 
       &:first-child {
         min-width: 434px;
+      }
+
+      @include min-desktop {
+        justify-content: flex-start;
+        width: auto;
+        @include mr(36px);
       }
 
       // span {
@@ -84,6 +119,8 @@
 
     &--img {
       max-width: 24px;
+      min-width: 24px;
+      min-height: 24px;
       max-height: 24px;
       fill: var(--primary2);
       margin-right: 16px;
@@ -93,6 +130,10 @@
   &__nav {
     display: flex;
     justify-content: flex-end;
+
+    @include min-desktop {
+      justify-content: flex-start;
+    }
 
     ul {
       margin: 0;
@@ -139,5 +180,34 @@
     display: none;
   }
 }
+
+
+.headroom {
+  transition: transform 0.25s ease-in-out ;
+  will-change: transform;
+}
+
+.header--fixed {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.headroom--pinned {
+  transform: translateY(0%);
+}
+
+.headroom--unpinned {
+  transform: translateY(-100%);
+}
+
+// .headroom--top {
+//   transform: translateY(0%);
+// }
+
+
+
 
 

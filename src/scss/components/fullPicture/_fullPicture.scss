@@ -34,9 +34,11 @@
     left: 50%;
     transform: translate(-50%, -40%);
 
-    @include tablet {
+    @include min-desktop {
       left: 54%;
     }
+
+   
   }
 
   &__button {

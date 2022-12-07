@@ -2,7 +2,6 @@ html {
   box-sizing: border-box;
   scrollbar-width: thin;
   scrollbar-color: var(--primary2) var(--primary3);
-
 }
 
 *,
@@ -16,8 +15,6 @@ html.page {
   font-family: var(--font-family, sans-serif);
   -webkit-text-size-adjust: 100%;
 
-
-
   ::-webkit-scrollbar {
     width: 4px;
   }
@@ -28,7 +25,6 @@ html.page {
 
   ::-webkit-scrollbar-thumb {
     background-color: var(--primary2);
-
   }
 }
 
@@ -44,7 +40,6 @@ html.relocation body {
 }
 
 .page__body {
-
   margin: 0;
   min-width: 320px;
   min-height: 100%;
@@ -67,7 +62,7 @@ a {
 }
 
 .site-container {
-  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+  overflow: hidden;
 }
 
 .is-hidden {
@@ -149,7 +144,7 @@ a {
   left: 0;
   background: var(--liner2);
   opacity: 0.8;
-  transition: opacity .4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .liner-3 {
@@ -177,7 +172,6 @@ a {
   position: relative;
 }
 
-
 .container__main {
   display: flex;
   align-items: flex-start;
@@ -193,19 +187,17 @@ a {
   width: 32%;
 }
 
-
-
 .site-home {
-
   .sliderH__container {
     margin-bottom: 104px;
   }
 }
 
 .site-pageproduct {
-
   .quote__container {
     margin: 0;
     padding: 80px 0px;
   }
 }
+
+
