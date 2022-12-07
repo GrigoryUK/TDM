@@ -10,7 +10,7 @@
     line-height: var(--font-line-x);
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--primary3);
+    color: var(--primary1);
   }
 }
 
@@ -153,9 +153,10 @@
   }
 
   &.blockProduct {
-    max-width: 334px;
-    font-size: var(--font-size-l);
-    line-height: 28px;
+    max-width: 328px;
+    font-weight: 700;
+    font-size: var(--font-size-m);
+    line-height: var(--font-line-m);
     text-transform: uppercase;
     left: 16px;
 

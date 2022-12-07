@@ -6,13 +6,18 @@
     position: relative;
 
     .title {
-      max-width: 765px;
-      margin-bottom: 16px;
+      max-width: 472px;
+      margin-bottom: 30px;
     }
   }
 
-  &__img {
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
 
+  &__img {
+    grid-column: 7 / 7 span;
     .image {
       height: 538px;
       width: 100vw;
@@ -35,7 +40,7 @@
   }
 
   &__button {
-    max-width: 335px;
+    max-width: 337px;
 
   }
 

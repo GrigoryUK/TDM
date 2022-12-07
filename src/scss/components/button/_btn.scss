@@ -3,7 +3,7 @@
     display: block;
     font-family: "Tahoma";
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 1em;
     line-height: 1em;
     text-align: center;
@@ -12,13 +12,12 @@
     background: var(--liner1);
     width: 100%;
     user-select: none;
-
     border-radius: 4px;
     background-size: 110% 100%;
     transition: all 0.4s ease-in-out;
 
     &.narrow {
-      padding: 12px 0;
+      padding: 22px 0;
 
       @include hover {
         // box-shadow: 1px -3px 6px;
@@ -28,9 +27,9 @@
     &.wide {
       padding: 24px 0;
       border-radius: 8px;
-      font-size: 20px;
+      font-size: 1.25em;
       letter-spacing: 0.012em;
-      text-transform: uppercase;
+
     }
 
     @include hover {

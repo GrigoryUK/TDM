@@ -152,6 +152,11 @@ a {
   transition: opacity .4s ease-in-out;
 }
 
+.liner-3 {
+  opacity: 1;
+  background: var(--liner3);
+}
+
 .liner-r-16 {
   border-radius: 16px;
 }
@@ -176,6 +181,7 @@ a {
 .container__main {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
 }
 
 .container__right {
