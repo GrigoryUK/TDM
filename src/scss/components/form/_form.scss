@@ -4,9 +4,19 @@
     background: var(--bg-block);
     padding-bottom: 80px;
 
+    @include mobile {
+      padding: 56px 0;
+    }
+
     .subtitle {
       margin-bottom: 24px;
+
+      @include mobile {
+        margin-bottom: 16px;
+      }
     }
+
+
   }
 
   &__content {
@@ -14,9 +24,18 @@
     align-items: flex-start;
     justify-content: space-between;
 
+    @include small-tablet {
+      flex-direction: column;
+    }
+
     &--right {
       max-width: 694px;
       margin-right: 16px;
+
+      @include small-tablet {
+        margin-right: 0;
+        margin-bottom: 40px;
+      }
       ul {
         margin: 0;
         padding: 0;
@@ -33,6 +52,12 @@
         line-height: var(--font-line-m);
         @include mb(0.5em);
         padding-left: 30px;
+
+        @include mobile {
+          font-size: var(--font-size-mm);
+          line-height: var(--font-line-mm);
+          @include mb(1em);
+        }
 
         &::before {
           border-right: 1.5px solid var(--primary2);
@@ -67,6 +92,11 @@
       // margin-top: 10px;
       max-width: 374px;
       width: 100%;
+
+      @include small-tablet {
+
+        max-width: 100%;
+      }
     }
   }
 
@@ -91,6 +121,10 @@
       border: 1px solid var(--primary5);
       padding: 12px;
       outline: none;
+
+      @include mobile {
+        padding: 10px;
+      }
 
       &:focus {
 

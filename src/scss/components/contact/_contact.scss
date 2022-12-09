@@ -10,6 +10,18 @@
 
       h2 {
         color: var(--primary3);
+
+        @include mobile {
+          font-size: var(--font-size-l);
+          line-height: var(--font-line-l);
+        }
+      }
+    }
+
+    .container {
+
+      @include small-tablet {
+        padding: 0;
       }
     }
   }
@@ -22,10 +34,21 @@
     // padding-left: ;
     // display: grid;
     // grid-template-columns: repeat(12, 1fr);
+
+    @include small-tablet {
+      flex-direction: column;
+      padding: 0;
+    }
     &--left {
       flex-shrink: 0;
       padding-top: 72px;
       padding-bottom: 40px;
+
+      @include small-tablet {
+        padding: 0;
+        padding: 56px 16px;
+
+      }
       // padding-left: 30px;
       // grid-column: 3 / 4 span; 492px
     }
@@ -39,12 +62,17 @@
 
   &__info {
     margin-bottom: 88px;
+    margin-right: 118px;
+    @include small-tablet {
+      margin-bottom: 56px;
+      margin-right: 0;
+    }
 
     &--row {
       font-family: "Roboto";
       display: flex;
       max-width: 354px;
-      margin-right: 118px;
+
       @include mb(8px);
       &:first-child {
         display: inline-block;
@@ -53,12 +81,20 @@
           float: left;
         }
       }
+
+      @include mobile {
+        display: inline-block;
+      }
       span {
         margin: 0;
         font-size: var(--font-size-m);
         line-height: var(--font-line-m);
         font-weight: 700;
         margin-right: 6px;
+
+        @include mobile {
+          float: left;
+        }
       }
 
       p {
@@ -109,6 +145,12 @@
       p {
         margin: 0;
         @include mb(12px);
+
+        @include mobile {
+          font-size: var(--font-size-mm);
+          line-height: var(--font-line-mm);
+          @include mb(3px);
+        }
       }
     }
   }
@@ -121,6 +163,15 @@
       height: 30em;
       margin-bottom: -.5em;
       border: none;
+
+      @include tablet {
+        width: 768px;
+        min-height: 432px;
+      }
+
+      @include small-tablet {
+        
+      }
     }
   }
 }

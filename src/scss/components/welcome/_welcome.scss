@@ -1,37 +1,82 @@
 .welcome {
-
   &__container {
-    margin-bottom: 40px;
   }
-
 
   .subtitle {
     margin-bottom: 36px;
+
+    @include mobile {
+      margin-bottom: 16px;
+    }
   }
 
   .text {
-    margin-bottom: 40px;
+    @include mobile {
+      margin-bottom: 0;
+    }
   }
 
   &__blocks {
     display: flex;
     align-items: center;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    @include tablet {
+      overflow: hidden;
+      overflow-x: scroll;
+    }
+
+    @include mobile {
+      overflow-x: auto;
+      overflow: auto;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0;
+      margin: 0;
+      margin: 32px 0;
+    }
   }
 
   &__item {
 
+    &:first-child {
+      margin-right: 20px;
+    }
+
+    @include mobile {
+
+      &:first-child {
+        margin-right: 0;
+        margin-bottom: 8px;
+      }
+    }
     .image {
       max-width: 569px;
       min-width: 569px;
       max-height: 300px;
       min-height: 300px;
       border-radius: 16px;
+
+      @include mobile {
+        max-width: 100%;
+        min-width: auto;
+        // min-height: auto;
+        max-height: 100%;
+        min-height: 194px;
+      }
+    }
+
+    .liner-h-98 {
+
+      @include mobile {
+        height: 97%;
+      }
     }
 
     @include hover {
       .line-span {
-
-
         &::before {
           width: 0%;
         }
@@ -42,8 +87,6 @@
       }
     }
 
-    &:first-child {
-      margin-right: 20px;
-    }
+
   }
 }

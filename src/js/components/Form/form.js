@@ -66,22 +66,13 @@ function formView() {
       const final = checkFinnal(checkMail);
 
       if (final == true) {
-        if (isDesktop()) {
+        gsap.registerPlugin(TimelineLite)
+        const tl = new TimelineLite();
 
-          gsap.registerPlugin(TimelineLite)
-          const tl = new TimelineLite();
-
-          tl.to(formBtn, .5, {opacity: 0,  ease: Linear}, 0)
-          tl.to(formInputs, 1, {opacity: 0,  ease: Linear}, 0)
-          tl.to(formSuc, 1, {opacity: 1, visibility: 'visible', ease: Linear})
-
-
-
-        }
-
-        if (isMobile() || isTablet()) {
-          
-        }
+        tl.to(formBtn, .5, {opacity: 0,  ease: Linear}, 0)
+        tl.to(formInputs, 1, {opacity: 0,  ease: Linear}, 0)
+        tl.to(formSuc, 1, {opacity: 1, visibility: 'visible', ease: Linear})
+        
       } else {
         console.log(false);
         return;

@@ -2,5 +2,9 @@
 
   &__container {
     margin-bottom: 84px;
+
+    @include tablet {
+      margin-bottom: 56px;
+    }
   }
 }

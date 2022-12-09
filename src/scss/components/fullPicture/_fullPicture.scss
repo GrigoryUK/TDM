@@ -1,5 +1,4 @@
 .fullPicture {
-
   &__container {
     margin: 0 auto;
     margin-bottom: 64px;
@@ -8,22 +7,52 @@
     .title {
       max-width: 472px;
       margin-bottom: 30px;
+
+      @include mobile {
+        margin-bottom: 26px;
+      }
     }
   }
 
   &__content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__img {
     grid-column: 7 / 7 span;
-    .image {
-      height: 538px;
-      width: 100vw;
-      user-select: none;
+
+    @include mobile {
+      grid-column: 1 / 12 span;
     }
 
+
+
+    .liner-3 {
+
+      @include mobile {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 80.97%, #ffffff 100%);
+      }
+
+    }
+    .image {
+      min-height: 538px;
+      max-height: 538px;
+      width: 100vw;
+      user-select: none;
+
+      @include mobile {
+        min-height: 328px;
+        max-height: none;
+        // width: auto;
+
+      }
+    }
   }
 
   &__descr {
@@ -38,14 +67,23 @@
       left: 54%;
     }
 
-   
+    @include mobile {
+      top: auto;
+      transform: none;
+      left: auto;
+      position: relative;
+      padding: 0 16px;
+      margin-top: -1em;
+
+
+    }
   }
 
   &__button {
     max-width: 337px;
 
+    @include mobile {
+
+    }
   }
-
-
-
 }

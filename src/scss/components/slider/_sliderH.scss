@@ -5,6 +5,15 @@
 
     .subtitle {
       margin-bottom: 38px;
+
+      @include mobile {
+        margin-bottom: 24px;
+      }
+    }
+
+    .container {
+      padding: 0;
+      padding-left: 16px;
     }
   }
 
@@ -55,6 +64,11 @@
     align-items: center;
     justify-content: flex-end;
     margin-top: 42px;
+
+    @include mobile {
+      justify-content: space-between;
+      margin-top: 24px;
+    }
   }
 }
 
@@ -63,12 +77,24 @@
   .swiper-slide {
     max-width: 275px;
 
+    @include mobile {
+      max-width: 288px;
+    }
+
     .image {
       max-width: 275px;
       min-width: 275px;
       min-height: 220px;
       max-height: 220px;
       border-radius: 16px;
+
+      @include mobile {
+        min-height: 194px;
+        max-height: 194px;
+        min-width: 288px;
+        max-width: 288px;
+
+      }
     }
   }
 }
@@ -108,9 +134,50 @@
     margin-top: 2px;
     transform: rotate(45deg);
   }
+
+  @include mobile {
+
+    &::before {
+      border-right: 2px solid var(--primary2);
+      content: '';
+      display: block;
+      height: 16px;
+      margin-top: -8px;
+      position: absolute;
+      transform: rotate(135deg);
+      left: 16px;
+      top: 10px;
+      width: 0;
+    }
+
+    &::after {
+      border-right: 2px solid var(--primary2);
+      content: '';
+      display: block;
+      height: 16px;
+      margin-top: -8px;
+      position: absolute;
+      left: 16px;
+      top: 10px;
+      width: 0;
+      margin-top: 2px;
+      transform: rotate(45deg);
+    }
+  }
 }
 
 .sliderH__prev {
   transform: rotate(-180deg) translateY(2px);
   margin-right: 48px;
+
+  @include mobile {
+    margin-right: 0;
+  }
+}
+
+.sliderH__next {
+
+  @include mobile {
+    margin-right: 16px;
+  }
 }
