@@ -7,6 +7,8 @@
 // подключения компонентов страницы
 @import "./components/global/fonts";
 @import "./components/global/imagefloat";
+@import "./components/global/burger";
+@import "./components/global/accordion";
 @import "./components/button/btn";
 @import "./components/index";
 @import "./components/global/header";
@@ -29,6 +31,7 @@
 @import "./components/block/blockArticle";
 @import "./components/block/blockPrice";
 @import "./components/block/blockPageProduct";
+@import "./components/block/blockCopyright";
 @import "./components/table/tableArticle";
 @import "./components/table/tableProduct";
 @import "./components/footnote/footnote";

@@ -1,9 +1,12 @@
 .blockPageProduct {
-
-
   &__Imgleft {
     display: flex;
     margin-bottom: 16px;
+
+    @include small-tablet {
+      flex-direction: column;
+      margin-bottom: 0;
+    }
     .image {
       max-width: 373px;
       min-width: 373px;
@@ -12,13 +15,49 @@
       margin-right: 20px;
       border-radius: 16px;
 
+      @include mobile {
+        min-width: 0;
+        max-width: 100%;
+        min-height: 0;
+        max-height: 100%;
+        height: auto;
+        width: 100%;
+        margin-right: 0;
+
+      }
     }
 
     .text {
       margin-top: 28px;
 
+      @include tablet {
+        margin: 0;
+      }
 
+      .blockPriceTablet {
+        display: none;
+        @include tablet {
+          display: block;
+        }
 
+        .btn__default {
+          text-decoration: none;
+          color: var(--primary3);
+
+          @include tablet {
+            border-radius: 8px;
+          }
+        }
+
+        .blockPrice {
+          margin-bottom: 20px;
+
+          @include mobile {
+            margin-top: 20px;
+            margin-bottom: 40px;
+          }
+        }
+      }
     }
   }
 
@@ -27,6 +66,10 @@
 
     .subtitle {
       margin-bottom: 24px;
+
+      @include mobile {
+        margin-bottom: 16px;
+      }
     }
   }
 }

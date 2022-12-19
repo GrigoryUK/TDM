@@ -1,7 +1,19 @@
 .sliderH {
 
+  &--tablet {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+  }
+
   &__container {
     margin-bottom: 42px;
+
+    @include tablet {
+      margin-bottom: 56px;
+    }
 
     .subtitle {
       margin-bottom: 38px;

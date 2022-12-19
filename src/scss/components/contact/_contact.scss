@@ -19,7 +19,6 @@
     }
 
     .container {
-
       @include small-tablet {
         padding: 0;
       }
@@ -47,15 +46,13 @@
       @include small-tablet {
         padding: 0;
         padding: 56px 16px;
-
       }
       // padding-left: 30px;
       // grid-column: 3 / 4 span; 492px
     }
 
     &--right {
-
-        width: calc(100% - 492px - 60px);
+      width: calc(100% - 492px - 60px);
       // grid-column: 7 / 7 span;
     }
   }
@@ -94,6 +91,8 @@
 
         @include mobile {
           float: left;
+          font-size: var(--font-size-mm);
+          line-height: var(--font-line-mm);
         }
       }
 
@@ -101,6 +100,11 @@
         margin: 0;
         font-size: var(--font-size-m);
         line-height: var(--font-line-m);
+
+        @include mobile {
+          font-size: var(--font-size-mm);
+          line-height: var(--font-line-mm);
+        }
       }
 
       a {
@@ -110,6 +114,11 @@
         line-height: var(--font-line-m);
         color: var(--primary3);
         transition: all 0.4s ease-in-out;
+
+        @include mobile {
+          font-size: var(--font-size-mm);
+          line-height: var(--font-line-mm);
+        }
 
         &::after {
           display: block;
@@ -148,7 +157,7 @@
 
         @include mobile {
           font-size: var(--font-size-mm);
-          line-height: var(--font-line-mm);
+          line-height: 19px;
           @include mb(3px);
         }
       }
@@ -156,12 +165,10 @@
   }
 
   &__map {
-
     iframe {
-
       width: 1360px;
       height: 30em;
-      margin-bottom: -.5em;
+      margin-bottom: -0.5em;
       border: none;
 
       @include tablet {
@@ -170,7 +177,6 @@
       }
 
       @include small-tablet {
-        
       }
     }
   }

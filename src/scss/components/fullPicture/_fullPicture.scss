@@ -83,7 +83,7 @@
     max-width: 337px;
 
     @include mobile {
-
+      max-width: 100%;
     }
   }
 }

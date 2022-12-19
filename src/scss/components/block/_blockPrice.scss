@@ -4,9 +4,19 @@
   padding: 24px 24px 40px 24px;
   margin-bottom: 80px;
 
+  @include mobile {
+    padding: 0;
+    padding: 24px 16px;
+  }
+
   &__price {
     color: var(--placeholder);
     margin-bottom: 8px;
+
+    @include mobile {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 
   &__number {
@@ -14,5 +24,11 @@
     text-transform: uppercase;
     letter-spacing: 0.02em;
     margin-bottom: 30px;
+
+    @include mobile {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 24px;
+    }
   }
 }

@@ -48,6 +48,11 @@
       line-height: var(--font-line-m);
       @include mb(1em);
       max-width: 962px;
+
+      @include mobile {
+        font-size: var(--font-size-mm);
+        line-height: var(--font-line-mm);
+      }
     }
 
     b {
@@ -55,12 +60,22 @@
       font-size: var(--font-size-m);
       line-height: var(--font-line-m);
       max-width: 962px;
+
+      @include mobile {
+        font-size: var(--font-size-mm);
+        line-height: var(--font-line-mm);
+      }
     }
 
     strong {
       font-size: var(--font-size-m);
       line-height: var(--font-line-m);
       max-width: 962px;
+
+      @include mobile {
+        font-size: var(--font-size-mm);
+        line-height: var(--font-line-mm);
+      }
     }
 
     ul {
@@ -76,6 +91,11 @@
       line-height: var(--font-line-m);
       max-width: 962px;
       @include mb(.5em);
+
+      @include mobile {
+        font-size: var(--font-size-mm);
+        line-height: var(--font-line-mm);
+      }
 
 
     }

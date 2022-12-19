@@ -3,6 +3,7 @@ import smoothScroll from "./smoothScroll/smoothScroll";
 import textareaHeight from "./utils/textarea";
 import animhref from "./utils/animhref";
 import headerRoom from "./utils/headerRoom";
+import accordion from "./utils/accordion";
 import {sliderHorizontal, sliderVertical} from "./sliders/slider";
 
 
@@ -16,4 +17,5 @@ window.addEventListener('DOMContentLoaded', (event) => {
   sliderHorizontal()
   sliderVertical()
   textareaHeight()
+  accordion()
 });

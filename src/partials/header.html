@@ -1,14 +1,145 @@
 <header class="header headroom header--fixed">
   <div class="header__container">
+    <div class="header__menu--tablet">
+      <div class="header__menu" data-menu>
+        <div class="header__menu--content">
+          <div class="container">
+            <div class="header__content--logo">
+              <div class="header__box--logo">
+                <a href="#">
+                  <svg class="header__logo" viewBox="0 0 178 80">
+                    <use xlink:href="img/sprite.svg#logoMain"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="header__burger">
+                <button
+                  class="btn-reset burger--close"
+                  aria-label="Открыть меню"
+                  aria-expanded="false"
+                  data-close
+                >
+                  <span class="burger__line"></span>
+                  <span class="burger__line"></span>
+                  <span class="burger__line"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="header__menu--scroll">
+            <div class="container">
+              <div class="header__menu--list">
+                <nav class="nav-menu" title="">
+                  <ul>
+                    <li class="menu-item"><a href="#">Главная</a></li>
+
+                    <li class="menu-item accordion">
+                      <button aria-expanded="false">
+                        <span >продукция</span>
+                        <span class="accordion__icon"></span>
+                      </button>
+                      <ul class="accordion__content" aria-hidden="true">
+                        <li class="menu-item"><a href="#">Европий металлический</a></li>
+                        <li class="menu-item"><a href="#">Иттербий металлический</a></li>
+                        <li class="menu-item"><a href="#">Иттрий металлический</a></li>
+                        <li class="menu-item"><a href="#">Лантан металлический</a></li>
+                        <li class="menu-item"><a href="#">Лютеций металлический</a></li>
+                        <li class="menu-item"><a href="#">Неодим металлический</a></li>
+                        <li class="menu-item"><a href="#">Празеодим металлический</a></li>
+                        <li class="menu-item"><a href="#">Прометий металлический</a></li>
+                        <li class="menu-item"><a href="#">Самарий металлический</a></li>
+                        <li class="menu-item"><a href="#">Скандий металлический</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="menu-item"><a href="#">о компании</a></li>
+                    <li class="menu-item"><a href="#">Контакты</a></li>
+                    <li class="menu-item"><a href="#">Обратная связь</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="header__menu--footer">
+              <div class="container">
+                <div class="contact__container">
+                  <div class="contact__content">
+                    <div class="contact__content--left">
+                      <div class="header__menu--svg">
+                        <svg
+                          class="header__menu--svg--logo"
+                          viewBox="0 0 132 60"
+                        >
+                          <use xlink:href="img/sprite.svg#logowhite"></use>
+                        </svg>
+                      </div>
+                      <div class="contact__info">
+                        <div class="contact__info--row">
+                          <span>Адрес:</span>
+                          <p>
+                            г. Екатеринбург, ул. Мамина-Сибиряка, д. 85, офис
+                            712
+                          </p>
+                        </div>
+                        <div class="contact__info--row">
+                          <span>e-mail:</span>
+                          <a href="mailto:tdm96@tdm96.ru">tdm96@tdm96.ru</a>
+                        </div>
+                        <div class="contact__info--row">
+                          <span>Телефон/факс:</span>
+                          <a href="tel:8-343-378-06-64"
+                            >(343) 378-06-64, 350-47-95</a
+                          >
+                        </div>
+                        <div class="contact__info--row">
+                          <span>Часы работы:</span>
+                          <p>пн — пт с 9.00 до 18.00</p>
+                        </div>
+                      </div>
+                      <div class="contact__copyright">
+                        <div class="contact__copyright--logo">
+                          <img
+                            src="./img/svg/logo-footer.svg"
+                            class="image"
+                            alt=""
+                          />
+                        </div>
+                        <div class="contact__copyright--text">
+                          <p>ООО "ТДМ96"© все права защищены.</p>
+                          <p>ЗАЧЕСТНЫЙ БИЗНЕС</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <div class="header__content">
         <div class="header__content--right">
           <div class="header__content--logo">
-            <a href="#">
-              <svg class="header__logo" viewBox="0 0 178 80">
-                <use xlink:href="img/sprite.svg#logoMain"></use>
-              </svg>
-            </a>
+            <div class="header__box--logo">
+              <a href="#">
+                <svg class="header__logo" viewBox="0 0 178 80">
+                  <use xlink:href="img/sprite.svg#logoMain"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="header__burger">
+              <button
+                class="btn-reset burger"
+                aria-label="Открыть меню"
+                aria-expanded="false"
+                data-burger
+              >
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+              </button>
+            </div>
           </div>
         </div>
         <div class="header__content--left">
@@ -26,41 +157,33 @@
                 <svg class="header__info--img" viewBox="0 0 24 23">
                   <use xlink:href="img/sprite.svg#phone"></use>
                 </svg>
-                <a href="tel:8-343-378-06-64"
-                  >+7 343 378-06-64</a
-                >
+                <a href="tel:8-343-378-06-64">+7 343 378-06-64</a>
               </li>
               <li>
                 <svg class="header__info--img" viewBox="0 0 22 18">
                   <use xlink:href="img/sprite.svg#mail"></use>
                 </svg>
-                <a href="mailto:tdm96@tdm96.ru"
-                  >tdm96@tdm96.ru</a
-                >
+                <a href="mailto:tdm96@tdm96.ru">tdm96@tdm96.ru</a>
               </li>
             </ul>
           </div>
           <div class="header__nav">
             <nav class="nav-menu" title="">
               <ul>
-                <li class="menu-item active"><a href="home.html">Главная</a></li>
+                <li class="menu-item active">
+                  <a href="home.html">Главная</a>
+                </li>
                 <li class="menu-item"><a href="product.html">продукция</a></li>
                 <li class="menu-item"><a href="about.html">о компании</a></li>
                 <li class="menu-item"><a href="contact.html">Контакты</a></li>
-                <li class="menu-item"><a href="connection.html">Обратная связь</a></li>
+                <li class="menu-item">
+                  <a href="connection.html">Обратная связь</a>
+                </li>
               </ul>
             </nav>
-          </div>
-          <div class="header__burger">
-            <button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
-              <span class="burger__line"></span>
-              <span class="burger__line"></span>
-              <span class="burger__line"></span>
-            </button>
           </div>
         </div>
       </div>
     </div>
-    <div class="header__menu"></div>
   </div>
 </header>

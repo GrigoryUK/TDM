@@ -1,0 +1,17 @@
+.blockCopyright {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+
+  &__container {
+    padding: 56px 0;
+    .contact__copyright {
+      align-items: center;
+    }
+
+    p {
+      @include mb(0px);
+    }
+  }
+}

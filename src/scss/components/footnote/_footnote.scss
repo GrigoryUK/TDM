@@ -2,6 +2,12 @@
 
   &__container {
     padding: 60px 0;
+
+    @include tablet {
+      padding: 0;
+      margin-bottom: 56px;
+
+    }
   }
 
   &__text {
@@ -12,6 +18,11 @@
       margin: 0;
       font-weight: 600;
       @include mb(1em);
+
+      @include mobile {
+        font-size: var(--font-size-mm);
+        line-height: var(--font-linr-mm);
+      }
     }
   }
 

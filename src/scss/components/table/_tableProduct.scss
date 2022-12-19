@@ -3,9 +3,14 @@
     margin-top: 48px;
     margin-bottom: 48px;
     margin-left: -11px;
-    table {
-      width: 100%;
 
+    @include mobile {
+      margin-top: 20px;
+      margin-bottom: 56px;
+    }
+
+  
+    table {
       width: 100%;
       text-align: center;
       font-family: "Roboto";
@@ -14,6 +19,13 @@
       font-size: 16px;
       line-height: 24px;
 
+      @include mobile {
+        font-size: 14px;
+        line-height: 16px;
+
+
+      }
+
       tr > th {
         margin: 0;
         border-radius: 4px;
@@ -21,10 +33,22 @@
         background: var(--bg-block);
         color: var(--primary1);
         padding: 11px 0;
+
+        @include mobile {
+          padding: 11px;
+          font-size: 12px;
+          line-height: 16px;
+        }
       }
 
       tbody > tr > td {
         padding: 11px 0;
+
+        @include mobile {
+          padding: 11px;
+          font-size: 12px;
+          line-height: 16px;
+        }
       }
     }
   }
