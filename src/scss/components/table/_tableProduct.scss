@@ -7,9 +7,10 @@
     @include mobile {
       margin-top: 20px;
       margin-bottom: 56px;
+      overflow-x: scroll;
     }
 
-  
+
     table {
       width: 100%;
       text-align: center;
