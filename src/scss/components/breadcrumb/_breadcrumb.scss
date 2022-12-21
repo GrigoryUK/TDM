@@ -67,3 +67,23 @@
     }
   }
 }
+
+// стили для больших данных после выполнения функции можно удалить
+
+.breadcrumb.product {
+
+  ol {
+    &:first-child {
+
+      @include mobile {
+        display: none;
+      }
+    }
+    &:last-child {
+      display: none;
+      @include mobile {
+        display: flex;
+      }
+    }
+  }
+}

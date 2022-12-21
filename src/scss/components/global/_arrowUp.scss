@@ -1,0 +1,58 @@
+.arrowUp {
+  position: fixed;
+  bottom: 32px;
+  right: 16px;
+  z-index: 100;
+
+
+
+
+  &__container {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background: var(--liner1);
+    border-radius: 100%;
+    border: none;
+    background-size: 110% 100%;
+    transition: all 0.4s ease-in-out;
+    z-index: 100;
+    @include hover {
+      background-position-x: 1080%;
+      opacity: 0.9;
+    }
+  }
+
+  &__circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    min-width: 18px;
+    max-width: 18px;
+    max-height: 16px;
+
+  }
+}
+
+.svg {
+
+  &--arrow {
+
+
+    &--up {
+      max-width: 18px;
+    }
+  }
+}
+
+.btn-up_hide {
+  display: none;
+}
+
+.btn-up_hiding {
+  opacity: 0;
+  visibility: hidden;
+}

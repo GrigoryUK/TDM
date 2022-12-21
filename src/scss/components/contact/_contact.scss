@@ -53,6 +53,10 @@
 
     &--right {
       width: calc(100% - 492px - 60px);
+
+      @include small-tablet {
+        width: auto;
+      }
       // grid-column: 7 / 7 span;
     }
   }
@@ -79,8 +83,16 @@
         }
       }
 
+
       @include mobile {
         display: inline-block;
+      }
+
+
+      &:last-child {
+        @include mobile {
+          display: flex;
+        }
       }
       span {
         margin: 0;
@@ -165,19 +177,35 @@
   }
 
   &__map {
+
+    width: 1390px;
+
+    @include big-desktop {
+      width: 830px;
+    }
+
+    @include tablet {
+      width: 768px;
+      min-height: 432px;
+    }
+
+    @include mobile {
+      position: relative;
+      z-index: 0;
+      width: 100%;
+    }
+
     iframe {
-      width: 1360px;
+      width: 100%;
       height: 30em;
       margin-bottom: -0.5em;
       border: none;
 
-      @include tablet {
-        width: 768px;
-        min-height: 432px;
-      }
 
-      @include small-tablet {
-      }
+
+
+
+
     }
   }
 }
